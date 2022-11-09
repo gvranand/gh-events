@@ -4,6 +4,10 @@ on:
     types: 
       - opened
   workflow_dispatch: 
+  issues:
+    types:
+      - opened
+      - deleted
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,4 +24,3 @@ jobs:
         run: npm run build
       - name: Deploy project
         run: echo "Deploying..."
-        
