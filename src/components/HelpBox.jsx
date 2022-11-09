@@ -2,11 +2,10 @@ import { string } from 'prop-types';
 
 import './HelpBox.css';
 
-function HelpBox({ title, text, head}) {
+function HelpBox({ title, text}) {
   return (
     <article className="help-box">
       <h2>{title}</h2>
-      <h3>{head}</h3>
       <p1>{text}</p1>
     </article>
   );
